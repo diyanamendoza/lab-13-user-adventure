@@ -5,18 +5,21 @@ import { findById } from "../utils.js";
 
 const test = QUnit.test;
 
-// test('yadayada', (expect) => {
-//     //Arrange
-//     // Set up your arguments and expectations
-//     const expected = ;
-//     //Act 
-//     // Call the function you're testing and set the result to a const
-//     const actual = );
+test('setUser should take in the users name and character choice, and update an object in local storage', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const userBefore = {};
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const userAfter = {
+        name: user.Name,
+        character: 
+    } ;
 
-//     //Expect
-//     // Make assertions about what is expected versus the actual result
-//     expect.equal(actual, expected);
-// });
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
 
 test('findById should take in an id and return the correct product object data from the specified array of objects', (expect) => {
     //Arrange
