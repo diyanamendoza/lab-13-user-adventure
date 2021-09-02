@@ -16,3 +16,14 @@ export function getUser(){
     if (!stringedUser) { return [];}
     return parsedUser;
 }
+
+export function createUser(userData) {
+    const user = {
+      username: FormData.get('username'),
+      usertype: FormData.get('usertype'),
+      hp: 0,
+      gold: 0,
+      completed: {}
+    };
+    return user; 
+  }
