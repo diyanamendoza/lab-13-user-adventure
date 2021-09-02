@@ -1,4 +1,4 @@
-import { setUser } from "./utils.js";
+import { getUser, setUser } from "./utils.js";
 
 // const nextButton = document.querySelector('button');
 const userForm = document.getElementById('userForm');
@@ -6,7 +6,6 @@ const userForm = document.getElementById('userForm');
 
 userForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  alert('hi');
   // create form data object
   const formData = new FormData(userForm);
 
@@ -18,12 +17,14 @@ userForm.addEventListener('submit', (e) => {
       gold: 0,
       completed: {}
     };
-
   // set user in local storage
   setUser(user);
   // take user to choose adventure page
-  // window.location = './quest/index.html';
+  window.location = './choose-adventure/index.html';
 
 });
 
 
+
+
+renderStatsHeader();
