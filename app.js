@@ -1,8 +1,15 @@
-// import functions and grab DOM elements
+const nextButton = document.querySelector('button');
 
-// initialize global state
+nextButton.addEventListener('submit', function (event){
+  event.preventDefault();
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+  // create form data object
+  const userData = document.getElementById('userForm');
+  // userData creates user object
+  createUser(userData);
+  // 
+
+
+})
+
+
