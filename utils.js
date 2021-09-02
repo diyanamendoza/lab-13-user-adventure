@@ -17,13 +17,13 @@ export function getUser(){
     return parsedUser;
 }
 
-export function createUser(userData) {
-    const user = {
-      username: FormData.get('username'),
-      usertype: FormData.get('usertype'),
-      hp: 0,
-      gold: 0,
-      completed: {}
-    };
-    return user; 
-  }
+// export function createUser(userData) {
+//     const user = {
+//       username: formData.get('username'),
+//       usertype: formData.get('usertype'),
+//       hp: 0,
+//       gold: 0,
+//       completed: {}
+//     };
+//     return user; 
+//   }
