@@ -12,7 +12,7 @@ export function setUser(userObj){
 
 export function getUser(){
     const stringedUser = localStorage.getItem(userInfo);
-    const parsedUser = JASON.parse(stringedUser);
+    const parsedUser = JSON.parse(stringedUser);
     if (!stringedUser) { return [];}
     return parsedUser;
 }
