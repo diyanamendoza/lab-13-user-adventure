@@ -47,13 +47,19 @@ form.addEventListener('submit', (e) => {
   const resultChoice = findById(questObj.choices, userSelection)
   resultEl.textContent = resultChoice.result;
   questDiv.append(resultEl);
+
+  const returnButton = document.createElement('button')
+  returnButton.textContent = 'Return to Map';
+  returnButton.addEventListener('click', () => {
+    window.location = '../choose-adventure'
+  })
+  questDiv.append(returnButton);
 })
-
-
-
 
 const questDiv = document.getElementById('quest-div')
 questDiv.append(questImage);
 questDiv.append(description);
 questDiv.append(form);
+
+
 
