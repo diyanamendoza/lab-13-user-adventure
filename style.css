@@ -63,10 +63,39 @@ button:hover {
     border: 1px solid red;
 }
 
-#quest-div > img {
-    width: 800px;
-}
+
 
 p {
     font-family: 'Raleway', sans-serif;
+}
+
+label > img {
+    width: 150px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+label > img:hover {
+    border: 1px solid black;
+}
+
+#radios {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
+
+.usertype > input {
+    visibility: hidden; 
+}
+
+.usertype {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quest-div > img {
+    width: 800px;
 }
