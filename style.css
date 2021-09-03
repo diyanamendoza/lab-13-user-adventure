@@ -70,3 +70,11 @@ button:hover {
 p {
     font-family: 'Raleway', sans-serif;
 }
+
+.map {
+    width: 600px;
+    height: 800px;
+    background-image: url(./assets/map.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
