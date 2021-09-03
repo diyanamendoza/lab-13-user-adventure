@@ -100,7 +100,7 @@ const hiking = {
         top: '31%',
         left: '5%'
     },
-    image: 'waterfall.jpeg',
+    image: 'waterfall.jpg',
     description: `You've hiked eight miles through lush forest and come upon a beautiful, multi-tiered waterfall. You love waterfalls, and this is one of the prettiest you've ever seen.`,
     choices: [{
         id: 'hike',
