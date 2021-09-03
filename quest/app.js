@@ -1,5 +1,5 @@
 import questData from '../quest-data.js'
-import { findById } from '../utils.js'
+import { findById, renderStatsHeader } from '../utils.js'
 
 
 
@@ -63,3 +63,4 @@ questDiv.append(form);
 
 
 
+renderStatsHeader();

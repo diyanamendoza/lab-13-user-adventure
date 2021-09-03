@@ -23,8 +23,3 @@ userForm.addEventListener('submit', (e) => {
   window.location = './choose-adventure/index.html';
 
 });
-
-
-
-
-renderStatsHeader();
