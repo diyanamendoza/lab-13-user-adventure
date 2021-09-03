@@ -1,29 +1,58 @@
 // IMPORT MODULES under test here:
 import quests from "../quest-data.js";
-import { findById } from "../utils.js";
+import { findById, setUser, getUser } from "../utils.js";
 
 
 const test = QUnit.test;
 
-test('setUser should take in the users name and character choice, and update an object in local storage', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const userBefore = {};
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const userAfter = {
-        name: user.Name,
-        character: 
-    } ;
+test('setUser should take in a user object, and update the object in local storage', (expect) => {
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    const expected = {
+        username: 'K',
+        usertype: 'userType',
+        hp: 0,
+        gold: 0,
+        completed: {}
+    };
+    
+    const user = {
+        username: 'K',
+        usertype: 'userType',
+        hp: 0,
+        gold: 0,
+        completed: {}
+    };
+
+    setUser(user);
+
+    const stringyUser = localStorage.getItem('USER INFO');
+    const actual = JSON.parse(stringyUser);
+    expect.deepEqual(actual, expected);
 });
 
+// test('getUser should take in USER INFO from local storage, and return a parsed object', (expect) => {
+
+//     const expected = {
+//         username: 'K',
+//         usertype: 'userType',
+//         hp: 0,
+//         gold: 0,
+//         completed: {}
+//     };
+    
+//     const userInfo = `[{\"username\":\"K\",\"usertype\":\"userType\",\"hp\":0,\"gold\":0,\"completed\":{}}]`;
+//     getUser(stringyUser);
+
+//     const stringyUser = JSON.stringify(userInfo)
+//     const actual = localStorage.getItem('USER INFO');
+
+    
+
+//     expect.deepEqual(actual, expected);
+// });
+
 test('findById should take in an id and return the correct product object data from the specified array of objects', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
+
     const expected = {
         id: 'treasure',
         title: 'A Golden Treasure',
@@ -56,11 +85,8 @@ test('findById should take in an id and return the correct product object data f
             gold: 0
         }]
     };
-    //Act 
-    // Call the function you're testing and set the result to a const
+
     const actual = findById(quests, 'treasure');
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
 });

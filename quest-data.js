@@ -3,6 +3,7 @@
 
 const rockClimbing = {
     id: 'rock-climbing',
+
     title: 'To climb or not to climb',
     image: 'rock-climber.jpeg',
     description: `
@@ -43,16 +44,10 @@ const rockClimbing = {
     }]
 };
 
-const dragon = {
-    id: 'dragon',
-    title: 'A HAIRY!!! Dragon',
-    map: {
-        top: '17%',
-        left: '37%'
-    },
-    image: 'dragon.jpg',
-    audio: 'dragon.wav',
-    action: 'dragon-growl.aiff',
+const baking = {
+    id: 'baking',
+    title: '',
+    image: '',
     description: `
         You run to a nearby village you have heard is being
         terrorized by a dragon. Sure enough as you rent a room
@@ -68,7 +63,7 @@ const dragon = {
             Unluckily, you trip over a discarded wagon wheel on your
             way out of town and take 40 hp damage. 
         `,
-        hp: -35,
+        lives: -35,
         gold: 15
     }, {
         id: 'fight',
@@ -79,7 +74,7 @@ const dragon = {
             village has been completely burned to the ground.
             Oh, and you take 45 hp damage.
         `,
-        hp: -45,
+        lives: -45,
         gold: 0
     }, {
         id: 'archer',
@@ -93,13 +88,13 @@ const dragon = {
             killing the dragon instantly. The villagers declare you their hero
             and award you 90 gold.
         `,
-        hp: 0,
+        lives: 0,
         gold: 90
     }]
 };
 
-const treasure = {
-    id: 'treasure',
+const hiking = {
+    id: 'hiking',
     title: 'A Golden Treasure',
     map: {
         top: '31%',
@@ -129,9 +124,9 @@ const treasure = {
 };
 
 const quests = [
-    monsters, 
-    treasure,
-    dragon,
+    rock-climbing, 
+    baking,
+    hiking,
 ];
 
 export default quests;
