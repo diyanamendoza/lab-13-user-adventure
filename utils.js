@@ -26,7 +26,7 @@ export function renderStatsHeader() {
     const userDiv = document.createElement('div');
     userDiv.classList.add('user-stats');
     // add user specific content to the div
-    userDiv.textContent = `${userStats.username} | HP: ${userStats.hp} | Gold: ${userStats.gold}`;
+    userDiv.textContent = `${userStats.username} | Lives: ${userStats.lives} | Money: ${userStats.money}`;
     // append userDiv to header
     header.append(userDiv);
   
