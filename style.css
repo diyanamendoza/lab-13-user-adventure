@@ -98,4 +98,42 @@ label > img:hover {
 
 #quest-div > img {
     width: 800px;
+
+.map {
+    width: 600px;
+    height: 800px;
+    background-image: url(./assets/map.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+
+#choiceID1 {
+    position: absolute;
+    top: 350px;
+    right: 305px;
+    font-size: 1.75rem;
+    color: black;
+    font-weight: 700;
+}
+
+#choiceID2 {
+    position: absolute;
+    top: 400px;
+    right: 600px;
+    font-size: 1.75rem;
+    color: black;
+    font-weight: 700;
+}
+
+#choiceID3 {
+    position: absolute;
+    top: 650px;
+    right: 400px;
+    font-size: 1.75rem;
+    color: black;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
 }
