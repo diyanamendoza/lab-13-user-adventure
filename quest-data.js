@@ -45,35 +45,30 @@ const rockClimbing = {
 
 const baking = {
     id: 'baking',
-    title: '',
+    title: 'the greatest bake',
     image: '',
     description: `
-        You run to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        You've been feeding and caring for your sourdough starter for months. Waiting until its juuuuust ripe enough to bake into a perfectly warm, tangy, probiotic loaf. The dough has been made, and you're just waiting for it to finish it's first rise when SUDDENLY you realize ... you're out of eggs! 
+        Do you...
     `,
     choices: [{
-        id: 'run',
-        description: 'Get the hell out of the village',
+        id: 'ghost',
+        description: 'Hold a seance to contact the ghost of Anthony Bourdain to ask what you should do',
         result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 gold.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
+            Anthony walks into the kitchen slowly, looks down at your recipe card and shakes his head.
+            "Sourdough?" he says, "This recipe doesn't even call for eggs..."
+            He walks back into the ether, but not before grabbing a $20 off your counter for his time.
+            You are eternally ashamed, and lose 20 gold BUT you bake your loaf, and live to see another day. 
         `,
-        lives: -35,
-        gold: 15
+        lives: 0,
+        gold: -20
     }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        id: 'phone',
+        description: 'phone a friend',
         result: `
-            You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
-            Oh, and you take 45 hp damage.
+            You call Matty Matheson
         `,
-        lives: -45,
+        lives: 0,
         gold: 0
     }, {
         id: 'archer',
@@ -87,8 +82,8 @@ const baking = {
             killing the dragon instantly. The villagers declare you their hero
             and award you 90 gold.
         `,
-        lives: 0,
-        gold: 90
+        lives: -1,
+        gold: -100
     }]
 };
 
