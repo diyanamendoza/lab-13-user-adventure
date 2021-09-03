@@ -1,13 +1,9 @@
 // quests[0].choices[0].description; ==> 'negotiate with them'
 
 
-const monsters = {
-    id: 'monsters',
-    title: 'A Den of Monsters',
-    map: {
-        top: '89%',
-        left: '44%'
-    },
+const rockClimbing = {
+    id: 'rock-climbing',
+    title: 'To climb or not to climb',
     image: 'monsters.jpg',
     description: `
         You enter the quest chamber only to be confronted by a hoard of
@@ -108,10 +104,7 @@ const treasure = {
         top: '31%',
         left: '5%'
     },
-    prerequisites: ['dragon', 'monsters'],
     image: 'treasure-chests.png',
-    audio: 'treasure-chests.wav',
-    action: 'chest-opening.wav',
     description: `As you enter the quest chamber you notice three chests before you. Just as you start to imagine the wealth, you see a giant serpent emerge from the back of the chamber. You'll need to make a run for it, but you have time to open one chest before you take off. Which one do you choose?`,
     choices: [{
         id: 'wooden',
