@@ -5,36 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>CHANGEME</title>
+    <title>Killer Pastimes</title>
 </head>
 
 <body>
     <header>
-        <h1>CHANGEME</h1>
+        <img class="logo" src="assets/kp-logo.png" alt="killer pastimes logo" title="killer pastimes">
     </header>
     <main>
         <form id="userForm">
-            <label for="username">What shall we call you on this adventure?</label>
+            <label for="username">What's your name?</label>
             <input id="username" name="username" required>
-            <legend>What are you?</legend>
-                <label>
-                    <input type="radio" name="usertype"  value="wizard" required>
-                    <img src="https://placebear.com/100/100">
+            <legend>Choose an occupation:</legend>
+            <div id="radios">
+                <label class="usertype">
+                    <label for="barista">Barista</label>
+                    <input type="radio" name="usertype"  value="barista" required>
+                    <img src="./assets/barista.png">
                 </label>
-                <label>
-                    <input type="radio" name="usertype"  value="elf" required>
-                    <img src="https://placebear.com/100/100">
+                <label class="usertype">
+                    <label for="Walmart employee">Walmart Charlene</label>
+                    <input type="radio" name="usertype"  value="Walmart employee" required>
+                    <img src="./assets/walmart.png">
                 </label>
-                <label>
-                    <input type="radio" name="usertype"  value="cleric" required>
-                    <img src="https://placebear.com/100/100">
+                <label class="usertype">
+                    <label for="Jeff Bezos">CEO</label>
+                    <input type="radio" name="usertype"  value="Jeff Bezos" required>
+                    <img src="./assets/ceo.png">
                 </label>
-                <label>
-                    <input type="radio" name="usertype"  value="ranger" required>
-                    <img src="https://placebear.com/100/100">
+                <label class="usertype">
+                    <label for="Alchemy TA">Alchemy TA</label>
+                    <input type="radio" name="usertype"  value="Alchemy TA" required>
+                    <img src="./assets/alchemy-ta.png">
                 </label>
-            <button>Next: Choose Adventure</button>
+            </div>
+            <button>Next: Choose a pastime</button>
         </form>
 
     </main>
