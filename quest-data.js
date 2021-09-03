@@ -18,8 +18,8 @@ const rockClimbing = {
             a few times but you make it to the top. Unfortunately your wallet
             fell out on a hard move and a little punk kid ran away with it. 
         `,
-        hp: 0,
-        gold: 35
+        lives: 0,
+        money: -100
     }, {
         id: 'another',
         description: 'Find another climb!',
@@ -29,8 +29,8 @@ const rockClimbing = {
             climber's wallet stuck between some rocks. You keep the $100 and return
             the wallet like a good citizen.
         `,
-        hp: -30,
-        gold: 50
+        lives: 0,
+        money: 100
     }, {
         id: 'run',
         description: 'Go home and watch netflix',
@@ -39,8 +39,8 @@ const rockClimbing = {
             not been satisfied by your cowardice and causes your vehicle to
             crash into a preschool. You die, and everybody curses your name.
         `,
-        hp: -50,
-        gold: 0
+        lives: -1,
+        money: 0
     }]
 };
 
@@ -124,7 +124,7 @@ const hiking = {
 };
 
 const quests = [
-    rock-climbing, 
+    rockClimbing, 
     baking,
     hiking,
 ];
