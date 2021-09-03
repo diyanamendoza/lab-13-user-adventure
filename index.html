@@ -21,22 +21,28 @@
             <label for="username">What's your name?</label>
             <input id="username" name="username" required>
             <legend>Choose an occupation:</legend>
-                <label>
+            <div id="radios">
+                <label class="usertype">
+                    <label for="barista">Barista</label>
                     <input type="radio" name="usertype"  value="barista" required>
-                    <img src="https://placebear.com/100/100">
+                    <img src="./assets/barista.png">
                 </label>
-                <label>
+                <label class="usertype">
+                    <label for="Walmart employee">Walmart Charlene</label>
                     <input type="radio" name="usertype"  value="Walmart employee" required>
-                    <img src="https://placebear.com/100/100">
+                    <img src="./assets/walmart.png">
                 </label>
-                <label>
+                <label class="usertype">
+                    <label for="Jeff Bezos">CEO</label>
                     <input type="radio" name="usertype"  value="Jeff Bezos" required>
-                    <img src="https://placebear.com/100/100">
+                    <img src="./assets/ceo.png">
                 </label>
-                <label>
+                <label class="usertype">
+                    <label for="Alchemy TA">Alchemy TA</label>
                     <input type="radio" name="usertype"  value="Alchemy TA" required>
-                    <img src="https://placebear.com/100/100">
+                    <img src="./assets/alchemy-ta.png">
                 </label>
+            </div>
             <button>Next: Choose a pastime</button>
         </form>
 
