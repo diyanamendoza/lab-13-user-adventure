@@ -51,16 +51,20 @@ form {
 button {
     font-size: 1.2em;
     font-family: 'Raleway', sans-serif;
-    background-color: black;
-    color: white;
     padding: 15px;
-    border: 1px solid white;
+    border: 1px solid black;
     cursor: pointer;
     margin-top: 20px;
+    background-color: white;
+    color:black;
+    border-radius: 20px;
 }
 
 button:hover {
-    border: 1px solid red;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border: 1px solid white;
 }
 
 
@@ -79,6 +83,10 @@ label > img:hover {
     border: 1px solid black;
 }
 
+label > img:focus {
+    border: 1px solid black;
+}
+
 #radios {
     display: grid;
     grid-template-columns: auto auto;
@@ -86,7 +94,19 @@ label > img:hover {
 }
 
 .usertype > input {
-    visibility: hidden; 
+    display: none;
+}
+
+
+input[type="radio"]:checked + img {
+    border: 2px solid red;
+}
+
+input[type="text"] {
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 30px;
+    width: 200px;
 }
 
 .usertype {
