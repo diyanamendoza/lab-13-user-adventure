@@ -132,7 +132,7 @@ input[type="text"] {
 
 #choiceID1 {
     position: absolute;
-    top: 300px;
+    top: 400px;
     right: 405px;
     /* font-size: 1.75rem; */
     color: black;
@@ -141,7 +141,7 @@ input[type="text"] {
 
 #choiceID2 {
     position: absolute;
-    top: 370px;
+    top: 450px;
     right: 650px;
     /* font-size: 1.75rem; */
     color: black;
@@ -174,7 +174,6 @@ input[type="text"] {
 
 /* quest pages */
 
-
 #quest-div > img {
     width: 800px;
 }
@@ -186,6 +185,9 @@ input[type="text"] {
     align-items: center;
 }
 
+#quest-div > p {
+    padding: 40px;
+}
 /* #quest-div > input {
     display: flex;
     flex-direction: column;
