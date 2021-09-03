@@ -1,11 +1,20 @@
 import questData from '../quest-data.js'
-import { findById, renderStatsHeader } from '../utils.js'
-
-
+import { findById, setUser, renderStatsHeader, getUser } from '../utils.js'
 
 const data = new URLSearchParams(window.location.search);
 
 const questId = data.get('id')
+
+
+
+
+
+const userStats = getUser();
+userStats.completed[questId] = true;
+setUser(userStats);
+
+
+
 
 const questObj = findById(questData, questId);
 
