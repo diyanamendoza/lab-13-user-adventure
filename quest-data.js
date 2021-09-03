@@ -47,7 +47,7 @@ const rockClimbing = {
 const baking = {
     id: 'baking',
     title: 'the greatest bake',
-    image: '',
+    image: 'sourdough.jpg',
     description: `
         You've been feeding and caring for your sourdough starter for months. Waiting until its juuuuust ripe enough to bake into a perfectly warm, tangy, probiotic loaf. The dough has been made, and you're just waiting for it to finish it's first rise when SUDDENLY you realize ... you're out of eggs! 
         Do you...
