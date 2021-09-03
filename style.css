@@ -1,13 +1,20 @@
 html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    background-color:rgb(40, 56, 56);
-    font-family: 'Roboto', sans-serif;
-    color: white;
 }
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    background: url('./assets/misty-background.jpg') no-repeat;
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -15,21 +22,22 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    background-color: white;
+    width: 800px;
+    border-radius: 30px;
+    padding: 30px;
+    font-family: 'Raleway', sans-serif;
 
 }
 
 header {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 20px;
-}
-
-.user-stats {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 form {
@@ -38,4 +46,27 @@ form {
     justify-content: center;
     align-items: center;
     gap: 20px; 
+}
+
+button {
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    border: 1px solid red;
+}
+
+#quest-div > img {
+    width: 800px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
