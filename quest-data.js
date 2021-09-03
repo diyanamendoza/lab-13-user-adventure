@@ -111,13 +111,13 @@ const hiking = {
     }, {
         id: 'selfie',
         description: `Pics or it didn't happen! You whip out your phone and take a round of selfies (#blessed!). You climb to the second tier of the waterfall so you can get a particularly epic shot.`,
-        result: 'As you lean out to get the selfie you wanted at the second tier, you lose your footing on the slippery rocks. You fall 30 feet, your body slamming into rocks at the bottom. The pain is blinding, and you notice broken ribs protruding from your torso. Your phone is nowhere to be found.',
+        result: 'As you lean out to get the selfie you wanted at the second tier, you lose your footing on the slippery rocks. You fall 30 feet, your body slamming into rocks at the bottom. The pain is blinding, and you notice broken ribs protruding from your torso. Your phone is nowhere to be found. The airlift and medical fees that follow bury you in debt.',
         lives: 0,
-        money: -5000
+        money: -50000
     }, {
         id: 'music',
         description: `You decide this moment would be even better with some music. You take out your bluetooth speaker, max out the volume, and start blasting "Waterfalls" by TLC.`,
-        result: `Little did you know, but the zombie apocalypse began during your hike. You and all of the hikers around you would have had a bit longer to live, but the nearest zombies hear your music and come running through the forest. Your music is so loud you don't realize the zombies are there until multiple tear pieces of your body from you.`,
+        result: `Little did you know, but the zombie apocalypse began during your hike. You and all of the hikers around you would have had a bit longer to live, but the nearest zombies hear your music and come running through the forest. Your music is so loud you don't realize the zombies are there until multiple tear pieces of your body from you. "Hotel California" plays as the zombies dig into your stomach and you bleed out.`,
         lives: -1,
         money: 0
     }]
