@@ -46,50 +46,46 @@ const rockClimbing = {
 
 const baking = {
     id: 'baking',
-    title: '',
-    image: '',
+    title: 'the greatest bake',
+    image: 'sourdough.jpg',
     description: `
-        You run to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        You've been feeding and caring for your sourdough starter for months. Waiting until its juuuuust ripe enough to bake into a perfectly warm, tangy, probiotic loaf. The dough has been made, and you're just waiting for it to finish it's first rise when SUDDENLY you realize ... you're out of eggs! 
+        Do you...
     `,
     choices: [{
-        id: 'run',
-        description: 'Get the hell out of the village',
+        id: 'ghost',
+        description: 'Hold a seance to contact the ghost of Anthony Bourdain',
         result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 gold.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
-        `,
-        lives: -35,
-        gold: 15
-    }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
-        result: `
-            You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
-            Oh, and you take 45 hp damage.
-        `,
-        lives: -45,
-        gold: 0
-    }, {
-        id: 'archer',
-        description: 'Emulate that guy from LOR who shot an arrow',
-        result: `
-            Inspired by the legend of Bard the Bowman, you notice a
-            stunned archer standing nearby and take their bow and quiver,
-            climb to the top of a tall tower and take aim. On the dragon's
-            next pass you steady your aim and let one fly. Amazingly,
-            you strike the dragon in the eye, piercing into the brain and
-            killing the dragon instantly. The villagers declare you their hero
-            and award you 90 gold.
+            Anthony walks into the kitchen slowly, looks down at your recipe card and shakes his head.
+            "Sourdough?" he says, "This recipe doesn't even call for eggs..."
+            He walks back into the ether, but not before grabbing a $20 off your counter for his time.
+            You are eternally ashamed, and lose 20 gold BUT you bake your loaf, and live to see another day. 
         `,
         lives: 0,
-        gold: 90
+        gold: -20
+    }, {
+        id: 'walk',
+        description: 'Go for a walk to think it through',
+        result: `
+            You do your best thinking on walks - you put in your headphones, put on your favorite synth album and get to walking. 
+            You turn a corner, and run into a friend! As you get closer, you realize this is the friend who traded you the sourdough starter when they needed to borrow some money a few months back. 
+            After some polite small talk, and they repay the loan, you tell them the problem you've run into. They look at you sweetly and put a hand on your shoulder, "I'd bet your recipe doesn't even call for eggs...". 
+            You RUN home to find they were right! 
+            Your loaves come out of the oven puffy, and with the perfect crumb. They're such a hit that you're able to use the repaid loan to start a successful bakery.
+        `,
+        lives: 0,
+        gold: 10000
+    }, {
+        id: 'store',
+        description: 'Frantically grab your bag, and run to the store',
+        result: `
+            You leave in such a hurry - you have to make it back before the loaves finish their rise! 
+            Your mind is so focused on the eggs that you don't realize you're still holding your kitchen scissors.
+            While running FULL SPRINT, you trip on the newly placed gravel pathway and perish.
+            Your last thought is ... did the recipe even call for eggs?
+        `,
+        lives: -1,
+        gold: 0
     }]
 };
 
