@@ -2,12 +2,15 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
+    background-color:rgb(40, 56, 56);
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 * {
     box-sizing: border-box;
 }
 
-body {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,3 +19,23 @@ body {
 
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+}
+
+.user-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
