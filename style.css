@@ -102,7 +102,7 @@ label > img:hover {
 .map {
     width: 600px;
     height: 800px;
-    background-image: url(./assets/map.png);
+    background-image: url('./assets/map.png');
     background-size: 600px;
     background-repeat: no-repeat;
 }
