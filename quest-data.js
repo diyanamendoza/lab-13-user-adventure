@@ -1,8 +1,8 @@
 // quests[0].choices[0].description; ==> 'negotiate with them'
 
 
-const monsters = {
-    id: 'monsters',
+const rock-climbing = {
+    id: 'rock-climbing',
     title: 'A Den of Monsters',
     map: {
         top: '89%',
@@ -46,8 +46,8 @@ const monsters = {
     }]
 };
 
-const dragon = {
-    id: 'dragon',
+const baking = {
+    id: 'baking',
     title: 'A HAIRY!!! Dragon',
     map: {
         top: '17%',
@@ -101,8 +101,8 @@ const dragon = {
     }]
 };
 
-const treasure = {
-    id: 'treasure',
+const hiking = {
+    id: 'hiking',
     title: 'A Golden Treasure',
     map: {
         top: '31%',
@@ -135,9 +135,9 @@ const treasure = {
 };
 
 const quests = [
-    monsters, 
-    treasure,
-    dragon,
+    rock-climbing, 
+    baking,
+    hiking,
 ];
 
 export default quests;
