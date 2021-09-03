@@ -5,38 +5,39 @@ const rockClimbing = {
     id: 'rock-climbing',
 
     title: 'To climb or not to climb',
-    image: 'monsters.jpg',
+    image: 'rock-climber.jpeg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        You stare up at the cliff. It's way more difficult a climb than anything
+        you've ever attempted.
     `,
     choices: [{
-        id: 'negotiate',
-        description: 'Negotiate with them',
+        id: 'climb',
+        description: 'Climb!',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+            You climb like you never have in your life. You almost fall and die
+            a few times but you make it to the top. Unfortunately your wallet
+            fell out on a hard move and a little punk kid ran away with it. 
         `,
         hp: 0,
         gold: 35
     }, {
-        id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        id: 'another',
+        description: 'Find another climb!',
         result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
+            You know your limits and looks for another place to climb. You find it,
+            but it's not very challenging. You are kinda bored, but you find another
+            climber's wallet stuck between some rocks. You keep the $100 and return
+            the wallet like a good citizen.
         `,
         hp: -30,
         gold: 50
     }, {
         id: 'run',
-        description: 'Run away like good Sir Robin',
+        description: 'Go home and watch netflix',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+            You decide to play it safe and go home. The ghost of death has
+            not been satisfied by your cowardice and causes your vehicle to
+            crash into a preschool. You die, and everybody curses your name.
         `,
         hp: -50,
         gold: 0
