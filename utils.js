@@ -12,18 +12,22 @@ export function setUser(userObj){
 
 export function getUser(){
     const stringedUser = localStorage.getItem(userInfo);
-    const parsedUser = JASON.parse(stringedUser);
+    const parsedUser = JSON.parse(stringedUser);
     if (!stringedUser) { return [];}
     return parsedUser;
 }
 
-export function createUser(userData) {
-    const user = {
-      username: FormData.get('username'),
-      usertype: FormData.get('usertype'),
-      hp: 0,
-      gold: 0,
-      completed: {}
-    };
-    return user; 
+export function renderStatsHeader() {
+    // get user stats from local storage
+    const userStats = getUser();
+    // grab header element
+    const header = document.querySelector('header');
+    // create div that will be appended to header, give it a class
+    const userDiv = document.createElement('div');
+    userDiv.classList.add('user-stats');
+    // add user specific content to the div
+    userDiv.textContent = `${userStats.username} | HP: ${userStats.hp} | Gold: ${userStats.gold}`;
+    // append userDiv to header
+    header.append(userDiv);
+  
   }
