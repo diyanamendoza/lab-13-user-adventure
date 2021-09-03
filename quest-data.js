@@ -1,7 +1,7 @@
 // quests[0].choices[0].description; ==> 'negotiate with them'
 
 
-const rock-climbing = {
+const rockClimbing = {
     id: 'rock-climbing',
     title: 'A Den of Monsters',
     map: {
@@ -48,14 +48,8 @@ const rock-climbing = {
 
 const baking = {
     id: 'baking',
-    title: 'A HAIRY!!! Dragon',
-    map: {
-        top: '17%',
-        left: '37%'
-    },
-    image: 'dragon.jpg',
-    audio: 'dragon.wav',
-    action: 'dragon-growl.aiff',
+    title: '',
+    image: '',
     description: `
         You run to a nearby village you have heard is being
         terrorized by a dragon. Sure enough as you rent a room
@@ -71,7 +65,7 @@ const baking = {
             Unluckily, you trip over a discarded wagon wheel on your
             way out of town and take 40 hp damage. 
         `,
-        hp: -35,
+        lives: -35,
         gold: 15
     }, {
         id: 'fight',
@@ -82,7 +76,7 @@ const baking = {
             village has been completely burned to the ground.
             Oh, and you take 45 hp damage.
         `,
-        hp: -45,
+        lives: -45,
         gold: 0
     }, {
         id: 'archer',
@@ -96,7 +90,7 @@ const baking = {
             killing the dragon instantly. The villagers declare you their hero
             and award you 90 gold.
         `,
-        hp: 0,
+        lives: 0,
         gold: 90
     }]
 };
