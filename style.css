@@ -1,3 +1,5 @@
+/* global */
+
 html {
     margin: 0;
     padding: 0;
@@ -67,12 +69,11 @@ button:hover {
     border: 1px solid white;
 }
 
-
-
 p {
     font-family: 'Raleway', sans-serif;
 }
 
+/* landing page */
 label > img {
     width: 150px;
     border-radius: 20px;
@@ -80,10 +81,6 @@ label > img {
 }
 
 label > img:hover {
-    border: 1px solid black;
-}
-
-label > img:focus {
     border: 1px solid black;
 }
 
@@ -116,9 +113,7 @@ input[type="text"] {
     align-items: center;
 }
 
-#quest-div > img {
-    width: 800px;
-}
+/* choose adventure page */
 
 .map {
     width: 600px;
@@ -130,31 +125,48 @@ input[type="text"] {
 
 #choiceID1 {
     position: absolute;
-    top: 350px;
-    right: 305px;
-    font-size: 1.75rem;
+    top: 300px;
+    right: 405px;
+    /* font-size: 1.75rem; */
     color: black;
     font-weight: 700;
 }
 
 #choiceID2 {
     position: absolute;
-    top: 400px;
-    right: 600px;
-    font-size: 1.75rem;
+    top: 370px;
+    right: 650px;
+    /* font-size: 1.75rem; */
     color: black;
     font-weight: 700;
 }
 
 #choiceID3 {
     position: absolute;
-    top: 650px;
-    right: 400px;
-    font-size: 1.75rem;
+    top: 600px;
+    right: 500px;
+    /* font-size: 1.75rem; */
     color: black;
     font-weight: 700;
 }
 
-a {
+#adventures > a {
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+#adventures > a:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+/* quest pages */
+
+#quest-div > img {
+    width: 800px;
 }
