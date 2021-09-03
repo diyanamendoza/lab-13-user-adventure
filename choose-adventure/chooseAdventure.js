@@ -3,11 +3,20 @@ import { getUser } from '../utils.js';
 import { renderStatsHeader } from '../utils.js';
 
 renderStatsHeader();
-const user = getUser();
+const userStats = getUser();
 
+const climbLink = document.getElementById('choiceID1');
+const bakeLink = document.getElementById('choiceID2');
+const hikeLink = document.getElementById('choiceID3');
 
+if (userStats.completed['rock-climbing']) {
+    climbLink.href = '';
+}
 
-// const climbLink = document.getElementById('choiceID1');
-// const bakeLink = document.getElementById('choiceID2');
-// const hikeLink = document.getElementById('choiceID3');
+if (userStats.completed.baking) {
+    bakeLink.href = '';
+}
 
+if (userStats.completed.hiking) {
+    hikeLink.href = '';
+}
