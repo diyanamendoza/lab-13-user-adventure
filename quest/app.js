@@ -1,8 +1,5 @@
 import questData from '../quest-data.js'
-import { findById, setUser } from '../utils.js'
-import { getUser } from '../utils.js';
-
-
+import { findById, setUser, renderStatsHeader, getUser } from '../utils.js'
 
 const data = new URLSearchParams(window.location.search);
 
@@ -75,3 +72,4 @@ questDiv.append(form);
 
 
 
+renderStatsHeader();
