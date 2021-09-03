@@ -1,7 +1,7 @@
 // quests[0].choices[0].description; ==> 'negotiate with them'
 
 
-const rock-climbing = {
+const rockClimbing = {
     id: 'rock-climbing',
     title: 'A Den of Monsters',
     map: {
