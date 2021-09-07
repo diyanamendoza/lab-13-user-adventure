@@ -36,8 +36,10 @@ export function updateMoney(choice) {
     let user = getUser()
     Number(user.money += choice);
     setUser(user);
-  }
 
-// export function updateLives(user, choice) {
-//     const userLives = user.lives += choice.lives;
-//   }
+}
+export function updateLives(choice) {
+    let user = getUser()
+    Number(user.lives += choice);
+    setUser(user);
+  }
