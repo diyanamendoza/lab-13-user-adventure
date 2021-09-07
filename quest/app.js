@@ -50,6 +50,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const formData = new FormData(form);
+  // This is how we'll change the money and lives, with userSelection
   const userSelection = formData.get('choice');
   
   const resultEl = document.createElement('p');
