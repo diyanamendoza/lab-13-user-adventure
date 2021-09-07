@@ -11,12 +11,17 @@ const hikeLink = document.getElementById('choiceID3');
 
 if (userStats.completed['rock-climbing']) {
     climbLink.href = '';
+    climbLink.style.textDecoration = "line-through";
 }
 
 if (userStats.completed.baking) {
     bakeLink.href = '';
+    bakeLink.style.textDecoration = "line-through";
+
 }
 
 if (userStats.completed.hiking) {
     hikeLink.href = '';
+    hikeLink.style.textDecoration = "line-through";
+
 }
