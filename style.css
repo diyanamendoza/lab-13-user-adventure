@@ -139,52 +139,34 @@ input[type="text"]:focus-visible {
 
 .map {
     width: 600px;
-    height: 800px;
+    /* height: 800px; */
     background-image: url('./assets/map.png');
     background-size: 600px;
     background-repeat: no-repeat;
 }
 
-#choiceID1 {
-    position: absolute;
-    top: 400px;
-    right: 405px;
-    /* font-size: 1.75rem; */
-    color: black;
-    font-weight: 700;
-}
-
-#choiceID2 {
-    position: absolute;
-    top: 450px;
-    right: 650px;
-    /* font-size: 1.75rem; */
-    color: black;
-    font-weight: 700;
-}
-
-#choiceID3 {
-    position: absolute;
-    top: 600px;
-    right: 500px;
-    /* font-size: 1.75rem; */
-    color: black;
-    font-weight: 700;
+#adventures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #adventures > a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     font-size: 1.2em;
+    color: black;
 }
 
 #adventures > a:hover {
     background-color: black;
     color: white;
-    border: 1px solid black;
 }
 
 /* quest pages */
