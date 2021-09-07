@@ -57,18 +57,20 @@ form.addEventListener('submit', (e) => {
 
   const resultEl = document.createElement('p');
   const resultChoice = findById(questObj.choices, userSelection)
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 6b520c7ba99230965d77d546073e29ed4a8fbb14
   resultEl.textContent = resultChoice.result;
   questDiv.append(resultEl);
 
  
   
   const returnButton = document.createElement('button')
-  returnButton.textContent = 'Return to Map';
+  //Change return button to 'go to results' button
+  if (userStats.completed['rock-climbing'] && userStats.completed.hiking && userStats.completed.baking) {
+    returnButton.textContent = 'See your fate!'
+  } else {
+    returnButton.textContent = 'Return to Map';
+  }
+  
+
   returnButton.addEventListener('click', () => {
     //If all quests have been completed, this will redirect to the results page
     
