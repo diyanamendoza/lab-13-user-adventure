@@ -1,5 +1,5 @@
 import { moneyAliveMessage, moneyDeadMessage, healthMessage } from "./results-messages.js";
-import { getUser } from "../utils.js";
+import { getUser, renderStatsHeader } from "../utils.js";
 
 const user = getUser();
 
@@ -26,6 +26,7 @@ const moneyResult = userLives === 'dead'
   : moneyAliveMessage[userMoney];
 
 renderResults();
+renderStatsHeader();
 
 
 /// HTML rendering
@@ -35,13 +36,15 @@ function renderResults() {
   const resultEl = document.createElement('p');
   const button = document.createElement('button');
 
-  button.textContent = 'Play Again'
-  resultEl.textContent = `${livesResult} ${moneyResult}`
+  console.log(resultDiv, resultEl, button)
+
+  button.style.textContent = 'Play Again'
+  resultEl.style.textContent = `${livesResult} ${moneyResult}`
 
   button.addEventListener('click', () => {
     localStorage.clear();
     window.location = '../index.html';
   });
 
-  resultDiv.append(resultEl, button)
+  resultDiv.append(resultEl, button);
 }
