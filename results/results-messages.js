@@ -6,9 +6,9 @@ export const moneyAliveMessage = {
 };
 
 export const moneyDeadMessage = {
-    poor: 
-    modest: 
-    rich: 
+    poor: 'You\'re poor too. At least you don\'t have to worry about that when you\'re dead.',
+    modest: 'At least you didn\'t die with nothing. Your eggless bread will be served at your funeral.'
+    rich: 'You died rich. Nice! Now your children will be able to quarrel over your fortune and throw it all away.'
 };
 
 export const healthMessage = {
