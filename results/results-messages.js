@@ -2,12 +2,12 @@ export const moneyAliveMessage = {
     debt: 'Crippling debt makes you consider suicide daily.',
     poor: 'You are indigent, but at least your family loves you.',
     modest: 'You have enough money to take someone out for a steak dinner tonight, but no one to take out.',
-    rich: 'You\'re loaded. Nice! You buy a haunted mansion as a summer home where you hang out with the ghost Anthony Bourdain'
+    rich: 'You\'re loaded. Nice! You buy a haunted mansion as a summer home where you hang out with the ghost of Anthony Bourdain'
 };
 
 export const moneyDeadMessage = {
     poor: 'You\'re poor too. At least you don\'t have to worry about that when you\'re dead.',
-    modest: 'At least you didn\'t die with nothing. Your eggless bread will be served at your funeral.'
+    modest: 'At least you didn\'t die with nothing. Your egg-less bread will be served at your funeral.',
     rich: 'You died rich. Nice! Now your children will be able to quarrel over your fortune and throw it all away.'
 };
 
