@@ -14,6 +14,8 @@ userStats.completed[questId] = true;
 setUser(userStats);
 
 
+console.log(userStats.completed['rock-climbing'])
+
 
 
 const questObj = findById(questData, questId);
@@ -55,7 +57,7 @@ form.addEventListener('submit', (e) => {
 
   const resultEl = document.createElement('p');
   const resultChoice = findById(questObj.choices, userSelection)
-  console.log(resultChoice);
+  
   resultEl.textContent = resultChoice.result;
   questDiv.append(resultEl);
 
@@ -64,7 +66,13 @@ form.addEventListener('submit', (e) => {
   const returnButton = document.createElement('button')
   returnButton.textContent = 'Return to Map';
   returnButton.addEventListener('click', () => {
-    window.location = '../choose-adventure'
+    //If all quests have been completed, this will redirect to the results page
+    
+    if (userStats.completed['rock-climbing'] && userStats.completed.hiking && userStats.completed.baking) {
+      window.location = '../results';
+    } else {
+    window.location = '../choose-adventure';
+    }
   })
   questDiv.append(returnButton);
   updateMoney(resultChoice.money);
