@@ -53,8 +53,6 @@ form.addEventListener('submit', (e) => {
   const userSelection = formData.get('choice');
 
 
-  
-  
   const resultEl = document.createElement('p');
   const resultChoice = findById(questObj.choices, userSelection)
   console.log(resultChoice);
@@ -70,6 +68,10 @@ form.addEventListener('submit', (e) => {
   })
   questDiv.append(returnButton);
   updateMoney(resultChoice.money);
+
+  //Hide the choices and button
+  
+  form.style.display = 'none';
 })
 
 const questDiv = document.getElementById('quest-div')
