@@ -32,12 +32,12 @@ export function renderStatsHeader() {
   
   }
 
-export function updateMoney(user, choice) {
-    const userMoney = user.money += choice.money;
-    setUser(userMoney);
+export function updateMoney(choice) {
+    let user = getUser()
+    Number(user.money += choice);
+    setUser(user);
   }
 
-export function updateLives(user, choice) {
-    const userLives = user.lives += choice.lives;
-    setUser(userLives)
-  }
+// export function updateLives(user, choice) {
+//     const userLives = user.lives += choice.lives;
+//   }
