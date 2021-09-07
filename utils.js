@@ -31,3 +31,13 @@ export function renderStatsHeader() {
     header.append(userDiv);
   
   }
+
+export function updateMoney(user, choice) {
+    const userMoney = user.money += choice.money;
+    setUser(userMoney);
+  }
+
+export function updateLives(user, choice) {
+    const userLives = user.lives += choice.lives;
+    setUser(userLives)
+  }
