@@ -43,6 +43,7 @@ header {
 }
 
 form {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,10 +72,13 @@ button:hover {
 
 p {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* landing page */
-label > img {
+/* label > img {
     width: 150px;
     border-radius: 20px;
     cursor:pointer;
@@ -97,6 +101,10 @@ label > img:hover {
 
 input[type="radio"]:checked + img {
     border: 2px solid red;
+} */
+
+label[for="username"] {
+    font-size: 1.5em;
 }
 
 input[type="text"] {
@@ -104,6 +112,7 @@ input[type="text"] {
     border: 1px solid black;
     height: 30px;
     width: 200px;
+    padding: 20px;
 }
 
 input[type="text"]:focus-visible {
@@ -111,12 +120,13 @@ input[type="text"]:focus-visible {
 }
 
 
-.usertype {
+
+/* .usertype {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* user stats */
 .user-stats {
