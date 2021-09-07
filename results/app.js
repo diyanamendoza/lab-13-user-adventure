@@ -25,4 +25,23 @@ const moneyResult = userLives === 'dead'
   ? moneyDeadMessage[userMoney]
   : moneyAliveMessage[userMoney];
 
-  alert(livesResult, moneyResult);
+renderResults();
+
+
+/// HTML rendering
+
+function renderResults() {
+  const resultDiv = document.createElement('div');
+  const resultEl = document.createElement('p');
+  const button = document.createElement('button');
+
+  button.textContent = 'Play Again'
+  resultEl.textContent = `${livesResult} ${moneyResult}`
+
+  button.addEventListener('click', () => {
+    localStorage.clear();
+    window.location = '../index.html';
+  });
+
+  resultDiv.append(resultEl, button)
+}
