@@ -57,11 +57,6 @@ form.addEventListener('submit', (e) => {
 
   const resultEl = document.createElement('p');
   const resultChoice = findById(questObj.choices, userSelection)
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 6b520c7ba99230965d77d546073e29ed4a8fbb14
   resultEl.textContent = resultChoice.result;
   questDiv.append(resultEl);
 
