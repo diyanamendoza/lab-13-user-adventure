@@ -1,5 +1,5 @@
 import questData from '../quest-data.js'
-import { findById, setUser, renderStatsHeader, getUser, updateMoney } from '../utils.js'
+import { findById, setUser, renderStatsHeader, getUser, updateMoney, updateLives } from '../utils.js'
 
 const data = new URLSearchParams(window.location.search);
 
@@ -57,7 +57,11 @@ form.addEventListener('submit', (e) => {
 
   const resultEl = document.createElement('p');
   const resultChoice = findById(questObj.choices, userSelection)
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 6b520c7ba99230965d77d546073e29ed4a8fbb14
   resultEl.textContent = resultChoice.result;
   questDiv.append(resultEl);
 
@@ -77,9 +81,13 @@ form.addEventListener('submit', (e) => {
   questDiv.append(returnButton);
   updateMoney(resultChoice.money);
 
+
   //Hide the choices and button
   
   form.style.display = 'none';
+
+  updateLives(resultChoice.lives);
+
 })
 
 const questDiv = document.getElementById('quest-div')
