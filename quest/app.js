@@ -60,7 +60,8 @@ form.addEventListener('submit', (e) => {
   resultEl.textContent = resultChoice.result;
   questDiv.append(resultEl);
 
- 
+  updateMoney(resultChoice.money);
+  updateLives(resultChoice.lives);
   
   const returnButton = document.createElement('button')
   //Change return button to 'go to results' button
@@ -81,14 +82,14 @@ form.addEventListener('submit', (e) => {
     }
   })
   questDiv.append(returnButton);
-  updateMoney(resultChoice.money);
+  
 
 
   //Hide the choices and button
   
   form.style.display = 'none';
 
-  updateLives(resultChoice.lives);
+  
 
 })
 
