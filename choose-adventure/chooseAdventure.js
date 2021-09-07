@@ -11,17 +11,18 @@ const hikeLink = document.getElementById('choiceID3');
 
 if (userStats.completed['rock-climbing']) {
     climbLink.href = '';
-    climbLink.style.textDecoration = "line-through";
+    climbLink.classList.remove('before');
+    climbLink.classList.add('after');
 }
 
 if (userStats.completed.baking) {
     bakeLink.href = '';
-    bakeLink.style.textDecoration = "line-through";
-
+    bakeLink.classList.remove('before');
+    bakeLink.classList.add('after');
 }
 
 if (userStats.completed.hiking) {
     hikeLink.href = '';
-    hikeLink.style.textDecoration = "line-through";
-
+    hikeLink.classList.remove('before');
+    hikeLink.classList.add('after');
 }

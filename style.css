@@ -154,7 +154,7 @@ input[type="text"]:focus-visible {
     margin-bottom: 100px;
 }
 
-#adventures > a {
+.before {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -164,9 +164,20 @@ input[type="text"]:focus-visible {
     color: black;
 }
 
-#adventures > a:hover {
+.before:hover {
     background-color: black;
     color: white;
+}
+
+.after {
+    text-decoration: line-through;
+    font-family: 'Raleway', sans-serif;
+    background-color:gray;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color: black;
+    cursor:auto;
 }
 
 /* quest pages */
