@@ -1,5 +1,5 @@
 import questData from '../quest-data.js'
-import { findById, setUser, renderStatsHeader, getUser } from '../utils.js'
+import { findById, setUser, renderStatsHeader, getUser, updateMoney } from '../utils.js'
 
 const data = new URLSearchParams(window.location.search);
 
@@ -27,7 +27,6 @@ description.textContent = questObj.description;
 const form = document.createElement('form');
 
 
-
 for (let choice of questObj.choices) {
   const currentChoice = document.createElement('p');
   currentChoice.textContent = choice.description;
@@ -52,18 +51,25 @@ form.addEventListener('submit', (e) => {
   const formData = new FormData(form);
   // This is how we'll change the money and lives, with userSelection
   const userSelection = formData.get('choice');
+
+
+  
   
   const resultEl = document.createElement('p');
   const resultChoice = findById(questObj.choices, userSelection)
+  console.log(resultChoice);
   resultEl.textContent = resultChoice.result;
   questDiv.append(resultEl);
 
+ 
+  
   const returnButton = document.createElement('button')
   returnButton.textContent = 'Return to Map';
   returnButton.addEventListener('click', () => {
     window.location = '../choose-adventure'
   })
   questDiv.append(returnButton);
+  updateMoney(resultChoice.money);
 })
 
 const questDiv = document.getElementById('quest-div')

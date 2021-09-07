@@ -62,7 +62,7 @@ const baking = {
             You are eternally ashamed, and lose 20 gold BUT you bake your loaf, and live to see another day. 
         `,
         lives: 0,
-        gold: -20
+        money: -20
     }, {
         id: 'walk',
         description: 'Go for a walk to think it through',
@@ -74,7 +74,7 @@ const baking = {
             Your loaves come out of the oven puffy, and with the perfect crumb. They're such a hit that you're able to use the repaid loan to start a successful bakery.
         `,
         lives: 0,
-        gold: 10000
+        money: 10000
     }, {
         id: 'store',
         description: 'Frantically grab your bag, and run to the store',
@@ -85,7 +85,7 @@ const baking = {
             Your last thought is ... did the recipe even call for eggs?
         `,
         lives: -1,
-        gold: 0
+        money: 0
     }]
 };
 
