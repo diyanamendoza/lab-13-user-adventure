@@ -1,4 +1,4 @@
-import { renderStatsHeader, setUser } from "./utils.js";
+import { setUser } from "./utils.js";
 
 // const nextButton = document.querySelector('button');
 const userForm = document.getElementById('userForm');
@@ -12,7 +12,7 @@ userForm.addEventListener('submit', (e) => {
   // userData creates user object
     const user = {
       username: formData.get('username'),
-      usertype: formData.get('usertype'),
+      // usertype: formData.get('usertype'),
       lives: 3,
       money: 100,
       completed: {}
