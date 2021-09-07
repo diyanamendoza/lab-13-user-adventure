@@ -32,19 +32,21 @@ renderStatsHeader();
 /// HTML rendering
 
 function renderResults() {
+  const mainEl = document.querySelector('main');
   const resultDiv = document.createElement('div');
   const resultEl = document.createElement('p');
   const button = document.createElement('button');
 
   console.log(resultDiv, resultEl, button)
 
-  button.style.textContent = 'Play Again'
-  resultEl.style.textContent = `${livesResult} ${moneyResult}`
+  button.textContent = 'Play Again'
+  resultEl.textContent = `${livesResult} ${moneyResult}`
 
   button.addEventListener('click', () => {
     localStorage.clear();
     window.location = '../index.html';
   });
 
+  mainEl.append(resultDiv);
   resultDiv.append(resultEl, button);
 }
