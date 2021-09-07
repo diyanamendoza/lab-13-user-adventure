@@ -87,35 +87,35 @@ test('findById should take in an id and return the correct product object data f
 });
 
 
-test('should add or subtract the user choice money from the money property of the user object', (expect) => {
+// test('should add or subtract the user choice money from the money property of the user object', (expect) => {
 
-    let userBeforeChoice = {
-        username: 'k',
-        money: 100,
-      };
+//     let userBeforeChoice = {
+//         username: 'k',
+//         money: 100,
+//       };
 
     
     
-    const userSelection = {
-        id: 'walk',
-        description: 'Go for a walk to think it through',
-        result: `
-            You do your best thinking on walks - you put in your headphones, put on your favorite synth album and get to walking. 
-            You turn a corner, and run into a friend! As you get closer, you realize this is the friend who traded you the sourdough starter when they needed to borrow some money a few months back. 
-            After some polite small talk, and they repay the loan, you tell them the problem you've run into. They look at you sweetly and put a hand on your shoulder, "I'd bet your recipe doesn't even call for eggs...". 
-            You RUN home to find they were right! 
-            Your loaves come out of the oven puffy, and with the perfect crumb. They're such a hit that you're able to use the repaid loan to start a successful bakery.
-        `,
-        lives: 0,
-        money: 10000
-    };
+//     const userSelection = {
+//         id: 'walk',
+//         description: 'Go for a walk to think it through',
+//         result: `
+//             You do your best thinking on walks - you put in your headphones, put on your favorite synth album and get to walking. 
+//             You turn a corner, and run into a friend! As you get closer, you realize this is the friend who traded you the sourdough starter when they needed to borrow some money a few months back. 
+//             After some polite small talk, and they repay the loan, you tell them the problem you've run into. They look at you sweetly and put a hand on your shoulder, "I'd bet your recipe doesn't even call for eggs...". 
+//             You RUN home to find they were right! 
+//             Your loaves come out of the oven puffy, and with the perfect crumb. They're such a hit that you're able to use the repaid loan to start a successful bakery.
+//         `,
+//         lives: 0,
+//         money: 10000
+//     };
 
-    const userAfterChoice = {
-            username: 'k',
-            money: userSelection.money =+ userBeforeChoice.money,
-        };
+//     const userAfterChoice = {
+//             username: 'k',
+//             money: userSelection.money =+ userBeforeChoice.money,
+//         };
 
-    // let finalMoney = updateMoney(userSelection.money);    
+//     // let finalMoney = updateMoney(userSelection.money);    
 
-    expect.deepEqual(userBeforeChoice, userAfterChoice);
-});
+//     expect.deepEqual(userBeforeChoice, userAfterChoice);
+// });
