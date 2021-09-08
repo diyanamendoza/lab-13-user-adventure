@@ -4,7 +4,7 @@ import { getUser, renderStatsHeader } from "../utils.js";
 const user = getUser();
 
 function getUserLives(user){
-  if (user.lives <= 0) return 'dead';
+  if (user.lives === 0) return 'dead';
   if (user.lives <= 2) return 'unhealthy';
   return 'healthy';
 }
@@ -39,19 +39,20 @@ function renderResults() {
   const resultEl = document.createElement('p');
   const button = document.createElement('button');
 
-  if (getUserMoney === 'debt'){
+    console.log(userLives, userMoney);
+  if (userMoney === 'debt'){
     moneyResultImg.src = './results-assests/debt.jpeg' }
-  if (getUserMoney === 'poor'){
+  if (userMoney === 'poor'){
     moneyResultImg.src = './results-assests/poor.jpeg' }
-  if (getUserMoney === 'modest'){
+  if (userMoney === 'modest'){
     moneyResultImg.src = './results-assests/modest.jpeg' }
-  if (getUserMoney === 'rich'){
+  if (userMoney === 'rich'){
     moneyResultImg.src = './results-assests/loaded.jpeg' }
-  if (getUserLives === 'dead'){
+  if (userLives === 'dead'){
     livesResultImg.src = './results-assests/cemetery.jpeg' }
-  if (getUserLives === 'unhealthy'){
+  if (userLives === 'unhealthy'){
     livesResultImg.src = './results-assests/hospital-bed.jpeg' }
-  else {
+  if (userLives === 'healthy') {
     livesResultImg.src = './results-assests/summited.jpeg'
   }
 
