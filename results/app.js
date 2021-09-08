@@ -5,14 +5,14 @@ const user = getUser();
 
 function getUserLives(user){
   if (user.lives <= 0) return 'dead';
-  if (user.lives >= 1) return 'unhealthy';
-  return 'dead';
+  if (user.lives <= 2) return 'unhealthy';
+  return 'healthy';
 }
 
 function getUserMoney(user){
   if (user.money < -49000) return 'debt';
   if (user.money < 100) return 'poor';
-  if (user.money >= 100) return 'modest';
+  if (user.money < 9000) return 'modest';
   return 'rich';
 }
 
@@ -39,12 +39,12 @@ function renderResults() {
   const resultEl = document.createElement('p');
   const button = document.createElement('button');
 
-  console.log(resultDiv, resultEl, button)
+  resultDiv.classList.add('result-div');
+  resultEl.classList.add('result-text');
+  button.classList.add('play-again-button');
 
-  livesResultImg.classList.add('lives-img');
-  moneyResultImg.classList.add('money-img');
-  livesResultImg.src = '';
-  moneyResultImg.src = '';
+  livesResultImg.src = '../assets/sourdough.jpg';
+  moneyResultImg.src = '../assets/sourdough.jpg';
   button.textContent = 'Play Again';
   resultEl.textContent = `${livesResult} ${moneyResult}`;
 
