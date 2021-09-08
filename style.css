@@ -208,3 +208,9 @@ input[type="text"]:focus-visible {
     cursor: pointer;
     width: 100%;
 }
+
+.whathappened {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}

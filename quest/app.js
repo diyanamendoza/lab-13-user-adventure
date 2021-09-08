@@ -58,6 +58,7 @@ form.addEventListener('submit', (e) => {
   const resultEl = document.createElement('p');
   const resultChoice = findById(questObj.choices, userSelection)
   resultEl.textContent = resultChoice.result;
+  resultEl.classList.add('whathappened');
   questDiv.append(resultEl);
 
   updateMoney(resultChoice.money);
