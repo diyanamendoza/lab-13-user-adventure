@@ -40,30 +40,27 @@ function renderResults() {
   const button = document.createElement('button');
 
   if (getUserMoney === 'debt'){
-    moneyResultImg.src = './results/results-assests/debt.jpeg' }
+    moneyResultImg.src = './results-assests/debt.jpeg' }
   if (getUserMoney === 'poor'){
-    moneyResultImg.src = './results/results-assests/poor.jpeg' }
+    moneyResultImg.src = './results-assests/poor.jpeg' }
   if (getUserMoney === 'modest'){
-    moneyResultImg.src = './results/results-assests/modest.jpeg' }
+    moneyResultImg.src = './results-assests/modest.jpeg' }
   if (getUserMoney === 'rich'){
-    moneyResultImg.src = './results/results-assests/loaded.jpeg' }
+    moneyResultImg.src = './results-assests/loaded.jpeg' }
   if (getUserLives === 'dead'){
-    livesResultImg.src = './results/results-assests/cemetery.jpeg' }
+    livesResultImg.src = './results-assests/cemetery.jpeg' }
   if (getUserLives === 'unhealthy'){
-    livesResultImg.src = './results/results-assests/hospital-bed.jpeg' }
+    livesResultImg.src = './results-assests/hospital-bed.jpeg' }
   else {
-    livesResultImg.src = './results/results-assests/summited.jpeg'
+    livesResultImg.src = './results-assests/summited.jpeg'
   }
-
 
   resultDiv.classList.add('result-div');
   resultEl.classList.add('result-text');
   button.classList.add('play-again-button');
 
-  
   button.textContent = 'Play Again';
   resultEl.textContent = `${livesResult} ${moneyResult}`;
-
 
   button.addEventListener('click', () => {
     localStorage.clear();
