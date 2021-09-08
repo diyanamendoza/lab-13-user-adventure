@@ -1,5 +1,8 @@
 import { setUser } from "./utils.js";
 
+// clear local Storage in case user is back buttoning
+localStorage.clear();
+
 // const nextButton = document.querySelector('button');
 const userForm = document.getElementById('userForm');
 
