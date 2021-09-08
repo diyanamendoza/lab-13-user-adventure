@@ -34,13 +34,20 @@ renderStatsHeader();
 function renderResults() {
   const mainEl = document.querySelector('main');
   const resultDiv = document.createElement('div');
+  const livesResultImg = document.createElement('img');
+  const moneyResultImg = document.createElement('img');
   const resultEl = document.createElement('p');
   const button = document.createElement('button');
 
   console.log(resultDiv, resultEl, button)
 
-  button.textContent = 'Play Again'
-  resultEl.textContent = `${livesResult} ${moneyResult}`
+  livesResultImg.classList.add('lives-img');
+  moneyResultImg.classList.add('money-img');
+  livesResultImg.src = '';
+  moneyResultImg.src = '';
+  button.textContent = 'Play Again';
+  resultEl.textContent = `${livesResult} ${moneyResult}`;
+
 
   button.addEventListener('click', () => {
     localStorage.clear();
