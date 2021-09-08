@@ -22,14 +22,14 @@ export function renderStatsHeader() {
     const userStats = getUser();
     // grab header element
     const header = document.querySelector('header');
-    // create div that will be appended to header, give it a class
+    // create div that will be appended to header, give it a class and id
     const userDiv = document.createElement('div');
     userDiv.classList.add('user-stats');
+    userDiv.setAttribute('id', 'user-stats');
     // add user specific content to the div
     userDiv.textContent = `${userStats.username} | Lives: ${userStats.lives} | Money: ${userStats.money}`;
     // append userDiv to header
     header.append(userDiv);
-  
   }
 
 export function updateMoney(choice) {
@@ -43,3 +43,9 @@ export function updateLives(choice) {
     Number(user.lives += choice);
     setUser(user);
   }
+
+export function updateStatsHeader() {
+    const statsHeader = document.getElementById('user-stats');
+    const userStats = getUser();
+    statsHeader.textContent = `${userStats.username} | Lives: ${userStats.lives} | Money: ${userStats.money}`;
+}

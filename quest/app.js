@@ -1,5 +1,5 @@
 import questData from '../quest-data.js'
-import { findById, setUser, renderStatsHeader, getUser, updateMoney, updateLives } from '../utils.js'
+import { findById, setUser, renderStatsHeader, getUser, updateMoney, updateLives, updateStatsHeader } from '../utils.js'
 
 const data = new URLSearchParams(window.location.search);
 
@@ -63,6 +63,7 @@ form.addEventListener('submit', (e) => {
 
   updateMoney(resultChoice.money);
   updateLives(resultChoice.lives);
+  updateStatsHeader();
   
   const returnButton = document.createElement('button')
   //Change return button to 'go to results' button
@@ -72,6 +73,7 @@ form.addEventListener('submit', (e) => {
     returnButton.textContent = 'Return to Map';
   }
   
+
 
   returnButton.addEventListener('click', () => {
     //If all quests have been completed, this will redirect to the results page
