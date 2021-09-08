@@ -223,6 +223,10 @@ input[type="text"]:focus-visible {
     align-items: center;
 }
 
-.result-div > img {
-    width: 800px;
+.results-img-div > img {
+    width: 400px;
+}
+
+.results-img-div {
+    display: flex;
 }

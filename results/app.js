@@ -36,10 +36,11 @@ function renderResults() {
   const resultDiv = document.createElement('div');
   const livesResultImg = document.createElement('img');
   const moneyResultImg = document.createElement('img');
+  const imagesDiv = document.createElement('div');
   const resultEl = document.createElement('p');
   const button = document.createElement('button');
 
-    console.log(userLives, userMoney);
+    // console.log(userLives, userMoney);
   if (userMoney === 'debt'){
     moneyResultImg.src = './results-assests/debt.jpeg' }
   if (userMoney === 'poor'){
@@ -58,6 +59,7 @@ function renderResults() {
 
   resultDiv.classList.add('result-div');
   resultEl.classList.add('result-text');
+  imagesDiv.classList.add('results-img-div');
   button.classList.add('play-again-button');
 
   button.textContent = 'Play Again';
@@ -69,5 +71,6 @@ function renderResults() {
   });
 
   mainEl.append(resultDiv);
-  resultDiv.append(livesResultImg, moneyResultImg, resultEl, button);
+  imagesDiv.append(livesResultImg, moneyResultImg);
+  resultDiv.append(imagesDiv, resultEl, button);
 }
