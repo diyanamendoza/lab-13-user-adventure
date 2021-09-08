@@ -39,16 +39,28 @@ function renderResults() {
   const resultEl = document.createElement('p');
   const button = document.createElement('button');
 
-  if (getUserMoney === 'dead'){
-
+  if (getUserMoney === 'debt'){
+    moneyResultImg.src = './' }
+  if (getUserMoney === 'poor'){
+    moneyResultImg.src = './results/results-assests/poor.jpeg' }
+  if (getUserMoney === 'modest'){
+    moneyResultImg.src = './results/results-assests/modest.jpeg' }
+  if (getUserMoney === 'rich'){
+    moneyResultImg.src = './results/results-assests/loaded.jpeg' }
+  if (getUserLives === 'dead'){
+    livesResultImg.src = './results/results-assests/cemetery.jpeg' }
+  if (getUserLives === 'unhealthy'){
+    livesResultImg.src = './results/results-assests/hospital-bed.jpeg' }
+  else {
+    livesResultImg.src = './results/results-assests/summited.jpeg'
   }
+
 
   resultDiv.classList.add('result-div');
   resultEl.classList.add('result-text');
   button.classList.add('play-again-button');
 
-  livesResultImg.src = '../assets/sourdough.jpg';
-  moneyResultImg.src = '../assets/sourdough.jpg';
+  
   button.textContent = 'Play Again';
   resultEl.textContent = `${livesResult} ${moneyResult}`;
 
