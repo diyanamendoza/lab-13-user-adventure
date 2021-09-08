@@ -214,3 +214,11 @@ input[type="text"]:focus-visible {
     color: white;
     padding: 30px;
 }
+
+/* results page */
+.result-div {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
