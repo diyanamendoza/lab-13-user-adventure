@@ -27,7 +27,8 @@ export function renderStatsHeader() {
     userDiv.classList.add('user-stats');
     userDiv.setAttribute('id', 'user-stats');
     // add user specific content to the div
-    userDiv.textContent = `${userStats.username} | Lives: ${userStats.lives} | Money: ${userStats.money}`;
+    userDiv.textContent = `${userStats.username} | Lives: ${userStats.lives} | Money: ${(userStats.money).toLocaleString('en-US',
+    {style: 'currency', currency: 'USD'})}`;
     // append userDiv to header
     header.append(userDiv);
   }
@@ -47,5 +48,6 @@ export function updateLives(choice) {
 export function updateStatsHeader() {
     const statsHeader = document.getElementById('user-stats');
     const userStats = getUser();
-    statsHeader.textContent = `${userStats.username} | Lives: ${userStats.lives} | Money: ${userStats.money}`;
+    statsHeader.textContent = `${userStats.username} | Lives: ${userStats.lives} | Money: ${(userStats.money).toLocaleString('en-US',
+    {style: 'currency', currency: 'USD'})}`;
 }
