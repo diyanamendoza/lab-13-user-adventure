@@ -40,7 +40,7 @@ function renderResults() {
   const button = document.createElement('button');
 
   if (getUserMoney === 'debt'){
-    moneyResultImg.src = './' }
+    moneyResultImg.src = './results/results-assests/debt.jpeg' }
   if (getUserMoney === 'poor'){
     moneyResultImg.src = './results/results-assests/poor.jpeg' }
   if (getUserMoney === 'modest'){
