@@ -39,6 +39,10 @@ function renderResults() {
   const resultEl = document.createElement('p');
   const button = document.createElement('button');
 
+  if (getUserMoney === 'dead'){
+
+  }
+
   resultDiv.classList.add('result-div');
   resultEl.classList.add('result-text');
   button.classList.add('play-again-button');
@@ -55,5 +59,5 @@ function renderResults() {
   });
 
   mainEl.append(resultDiv);
-  resultDiv.append(resultEl, button);
+  resultDiv.append(livesResultImg, moneyResultImg, resultEl, button);
 }
